@@ -1,4 +1,14 @@
 body {
     text-align: center;
     background-color: aliceblue;
+
+}
+
+p {
+    max-width: 500px;
+    margin: 0 auto;   
+}
+
+ul {
+    list-style: none;  
 }
