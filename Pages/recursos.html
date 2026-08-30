@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recursos — Asociación Campesina</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../Assets/CSS/base.css">
+<link rel="stylesheet" href="../Assets/CSS/page-hero.css">
+</head>
+<body>
+
+  <!-- NAVEGACIÓN (idéntica en todas las páginas) -->
+  <div id="header-placeholder"></div>
+
+  <!-- CABECERA DE PÁGINA -->
+  <section class="page-hero">
+    <div class="contenedor">
+      <span class="eyebrow">Recursos</span>
+      <h1>Guías, documentos y capacitaciones</h1>
+      <p>Material de apoyo para los asociados: técnico, legal y formativo. Se amplía a medida que se producen nuevos documentos.</p>
+    </div>
+  </section>
+
+  <!-- FILTROS: se amplían añadiendo más botones .filtro -->
+  <div class="contenedor">
+    <div class="filtros">
+      <button class="filtro activo">Todos</button>
+      <button class="filtro">Guías técnicas</button>
+      <button class="filtro">Documentos legales</button>
+      <button class="filtro">Capacitaciones</button>
+      <button class="filtro">Formatos y trámites</button>
+    </div>
+  </div>
+
+  <!-- LISTADO: patrón de tarjeta en fila, repetible -->
+  <section class="seccion-contenido">
+    <div class="contenedor">
+      <h2 class="titulo-bloque">Todos los recursos</h2>
+
+      <!-- PATRÓN DE TARJETA — copiar este bloque .tarjeta-fila para añadir un nuevo recurso -->
+      <a href="#" class="tarjeta-fila">
+        <span class="tarjeta-fila-icono">📄</span>
+        <div class="tarjeta-fila-cuerpo">
+          <h3>Guía de manejo agroecológico del suelo</h3>
+          <span class="tarjeta-meta">Guía técnica · PDF · Publicado 12 mar 2026</span>
+        </div>
+        <span class="tarjeta-fila-accion">Descargar</span>
+      </a>
+      <!-- FIN PATRÓN -->
+
+      <a href="#" class="tarjeta-fila">
+        <span class="tarjeta-fila-icono">⚖️</span>
+        <div class="tarjeta-fila-cuerpo">
+          <h3>Estatutos de la asociación</h3>
+          <span class="tarjeta-meta">Documento legal · PDF · Actualizado 4 feb 2026</span>
+        </div>
+        <span class="tarjeta-fila-accion">Descargar</span>
+      </a>
+
+      <a href="#" class="tarjeta-fila">
+        <span class="tarjeta-fila-icono">🎓</span>
+        <div class="tarjeta-fila-cuerpo">
+          <h3>Taller: acceso a créditos agropecuarios</h3>
+          <span class="tarjeta-meta">Capacitación · Video · Publicado 28 ene 2026</span>
+        </div>
+        <span class="tarjeta-fila-accion">Ver</span>
+      </a>
+
+      <a href="#" class="tarjeta-fila">
+        <span class="tarjeta-fila-icono">📝</span>
+        <div class="tarjeta-fila-cuerpo">
+          <h3>Formato de afiliación para nuevos miembros</h3>
+          <span class="tarjeta-meta">Formato y trámite · PDF · Actualizado 15 ene 2026</span>
+        </div>
+        <span class="tarjeta-fila-accion">Descargar</span>
+      </a>
+
+      <a href="#" class="tarjeta-fila">
+        <span class="tarjeta-fila-icono">📄</span>
+        <div class="tarjeta-fila-cuerpo">
+          <h3>Guía de rotación de cultivos para pequeñas parcelas</h3>
+          <span class="tarjeta-meta">Guía técnica · PDF · Publicado 3 dic 2025</span>
+        </div>
+        <span class="tarjeta-fila-accion">Descargar</span>
+      </a>
+
+      <a href="#" class="tarjeta-fila">
+        <span class="tarjeta-fila-icono">🎓</span>
+        <div class="tarjeta-fila-cuerpo">
+          <h3>Capacitación: buenas prácticas de cosecha y poscosecha</h3>
+          <span class="tarjeta-meta">Capacitación · Video · Publicado 20 nov 2025</span>
+        </div>
+        <span class="tarjeta-fila-accion">Ver</span>
+      </a>
+
+      <div class="cargar-mas">
+        <button class="btn-secundario">Cargar más recursos</button>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="../Assets/JS/Unir.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+/* ========================================
+   PATRÓN: seccion-contenido
+   Contenedor genérico con espaciado + título de bloque
+   Usado en: campesinos, produccion-mercado, recursos, afiliarse
+   Requiere: base.css
+   ======================================== */
+
+.seccion-contenido {
+  padding: var(--space-5) 0 var(--space-6);
+}
+
+.seccion-contenido .titulo-bloque {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+  font-family: var(--font-body);
+  font-weight: 600;
+  margin-bottom: var(--space-3);
+}

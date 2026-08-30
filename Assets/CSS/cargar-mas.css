@@ -1,0 +1,29 @@
+/* ========================================
+   PATRÓN: cargar-mas
+   Botón secundario para cargar más contenido / paginación
+   Usado en: campesinos, produccion-mercado, recursos
+   Requiere: base.css
+   ======================================== */
+
+.cargar-mas {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-secundario {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 10px 22px;
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius);
+  color: var(--color-primary-dark);
+  background: none;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.btn-secundario:hover,
+.btn-secundario:focus-visible {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}

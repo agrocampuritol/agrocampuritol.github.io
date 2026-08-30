@@ -1,0 +1,35 @@
+/* ========================================
+   PATRÓN: filtro
+   Píldora de categoría / índice de subsecciones
+   Usado en: campesinos, produccion-mercado, recursos
+   Requiere: base.css
+   ======================================== */
+
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  padding: var(--space-3) 0;
+}
+
+.filtro {
+  font-size: 0.85rem;
+  padding: 6px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  color: var(--color-text-muted);
+  background: var(--color-bg);
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.filtro:hover,
+.filtro:focus-visible {
+  border-color: var(--color-primary);
+  color: var(--color-primary-dark);
+}
+
+.filtro.activo {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-bg);
+}

@@ -1,0 +1,62 @@
+/* ========================================
+   PATRÓN: icono-enlace
+   Icono SVG + título, como acceso directo a otras páginas
+   Usado en: index
+   Requiere: base.css
+   Responsive: ver bloque @media al final
+   ======================================== */
+
+.grid-iconos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-2);
+}
+
+.icono-enlace {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-2) var(--space-1);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  text-align: center;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.icono-enlace:hover,
+.icono-enlace:focus-visible {
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.icono-enlace-svg {
+  width: 36px;
+  height: 36px;
+  color: var(--color-primary);
+  transition: color 0.15s ease;
+}
+
+.icono-enlace-svg svg {
+  width: 100%;
+  height: 100%;
+}
+
+.icono-enlace:hover .icono-enlace-svg,
+.icono-enlace:focus-visible .icono-enlace-svg {
+  color: var(--color-accent);
+}
+
+.icono-enlace-titulo {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--color-primary-dark);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 560px) {
+  .grid-iconos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

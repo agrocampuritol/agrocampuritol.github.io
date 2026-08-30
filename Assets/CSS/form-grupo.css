@@ -1,0 +1,171 @@
+/* ========================================
+   PATRÓN: form-grupo
+   Formulario dividido en secciones (fieldsets) con campos, radios, checks
+   Usado en: afiliarse
+   Requiere: base.css
+   Responsive: ver bloque @media al final
+   ======================================== */
+
+.formulario-wrap {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.form-grupo {
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.form-grupo:last-of-type {
+  border-bottom: none;
+}
+
+.form-grupo h2 {
+  font-size: 1.05rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  margin-bottom: 4px;
+}
+
+.form-grupo .form-grupo-nota {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-3);
+}
+
+.campo {
+  margin-bottom: var(--space-2);
+}
+
+.campo label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 6px;
+}
+
+.campo .opcional {
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="tel"],
+.campo input[type="number"],
+.campo input[type="date"],
+.campo select,
+.campo textarea {
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--color-text);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  transition: border-color 0.15s ease;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.campo textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.campo-fila {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2);
+}
+
+.opciones-radio,
+.opciones-check {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.opcion {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.92rem;
+}
+
+.opcion input {
+  margin-top: 3px;
+}
+
+.form-ayuda {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-top: 4px;
+}
+
+.form-envio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.btn-primario {
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 12px 26px;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--color-primary);
+  color: var(--color-bg);
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.btn-primario:hover,
+.btn-primario:focus-visible {
+  background: var(--color-primary-dark);
+}
+
+.form-progreso {
+  display: flex;
+  gap: var(--space-1);
+  margin-bottom: var(--space-4);
+}
+
+.form-progreso span {
+  flex: 1;
+  height: 3px;
+  background: var(--color-border);
+  border-radius: 999px;
+}
+
+.form-progreso span.activo {
+  background: var(--color-accent);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 560px) {
+  .campo-fila {
+    grid-template-columns: 1fr;
+  }
+
+  .form-envio {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-envio .btn-primario {
+    width: 100%;
+  }
+}
